@@ -17,7 +17,7 @@ for name in names:
     person.click()
 
     for i in range(1,3):
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
 
     msg_got = driver.find_elements_by_css_selector("span.selectable-text.invisible-space.copyable-text")
     msg = [message.text for message in msg_got]
